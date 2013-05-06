@@ -48,16 +48,16 @@ var router = bee.route({ // Create a new router
         //   then matches === [ "smith", "will" ]
     },
     "`404`": function(req, res) {
-        // Called when no other route rule are matched
+        // Called when no other route rules are matched.
         //
-        // This handler can later be called explicitly with router.missing
+        // This handler can later be called explicitly with `router.missing`.
     },
     "`500`": function(req, res, err) {
-        // Called when an exception is thrown by another router function
-        // The error that caused the exception is passed as the third parameter
-        // This _not_ guaranteed to catch all exceptions
+        // Called when an exception is thrown by another router function.
+        // The error that caused the exception is passed as the third parameter.
+        // This _not_ guaranteed to catch all exceptions.
         //
-        // This handler can later be called explicitly with router.error
+        // This handler can later be called explicitly with `router.error`.
     }
 });
 
